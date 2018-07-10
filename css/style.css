@@ -1,0 +1,209 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat:300|Oswald:300";
+html {
+  font-size: 1em;
+}
+
+body {
+  line-height: 1.45;
+}
+
+p {
+  margin-bottom: 1.3em;
+}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.157em;
+}
+
+h2 {
+  font-size: 2.369em;
+}
+
+h3 {
+  font-size: 1.777em;
+}
+
+h4 {
+  font-size: 1.333em;
+}
+
+button {
+  font-size: 1.2em;
+}
+
+small, .font_small {
+  font-size: 0.75em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  font-family: "Oswald", "times new roman", helvetica, sans-serif;
+}
+
+.title-header-big {
+  color: white;
+  text-transform: uppercase;
+}
+
+.title-header-small {
+  color: #ca99ff;
+  text-transform: uppercase;
+}
+
+* {
+  font-family: "Montserrat", times, sans-serif;
+}
+
+p {
+  color: #ca99ff;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+}
+
+body {
+  background: linear-gradient(to bottom right, #311a54, #000000);
+  /* Fallback for when there is no custom background color defined. */
+  margin: 0;
+  padding: 0 2em 0 2em;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  color: white;
+  border-radius: 10px;
+  background: none;
+  padding: .7em 1.5em;
+  transition: all .5s;
+  text-transform: uppercase;
+  text-transform: capitalize;
+}
+button:hover {
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  transition: all .5s;
+}
+
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+a {
+  color: #27e2b6;
+  text-decoration: none;
+}
+a:visited {
+  color: #14b5f4;
+}
+a:hover, a:focus, a:active {
+  color: #14b5f4;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
+}
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+.site-header {
+  margin: 0 auto;
+  padding: 1.5em 0 1.5em 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-header .main-navigation {
+  text-transform: uppercase;
+}
+.site-header .main-navigation li {
+  display: inline-block;
+  margin-left: 1.5em;
+  padding: 0.5em;
+}
+.site-header .main-navigation a {
+  color: white;
+}
+.site-header .site-branding {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.site-header .site-branding .site-title {
+  margin-left: 1em;
+}
+
+.highlight {
+  background-color: #f74354;
+  transition: all .5s;
+  border-radius: 10px;
+  padding: .7em 1.5em;
+}
+.highlight:hover {
+  background: #da3545;
+  transition: all .5s;
+}
+
+section {
+  min-height: 100vh;
+}
+section button {
+  margin-right: 1.2em;
+}
+
+.half-layout {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.third-layout {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+.third-layout .title-header-small,
+.third-layout .title-header-big {
+  justify-self: center;
+  grid-column: 1 / -1;
+}
+.third-layout .title-header-small {
+  align-self: end;
+}
+.third-layout .block {
+  text-align: center;
+}
+
+.primary {
+  max-width: 1500px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,38 @@
+// NOTE: Styling 2-column layout and 3-column layout for front page
+// QUESTION: there are also layout in percentage in variables-site/structure, but I use grid here
+section {
+  min-height: 100vh;
+
+  button {
+    margin-right: 1.2em;
+  }
+}
+.half-layout {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.third-layout {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-items: center;
+
+  .title-header-small,
+  .title-header-big
+  {
+    justify-self: center;
+    grid-column: 1 / -1;
+  }
+  .title-header-small {
+    align-self: end;
+  }
+
+  .block {
+    text-align: center;
+  }
+}

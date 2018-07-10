@@ -1,0 +1,6 @@
+button {
+  @include border-btn();
+
+  text-transform: capitalize;
+  
+}

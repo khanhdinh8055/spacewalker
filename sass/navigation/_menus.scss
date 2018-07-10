@@ -1,0 +1,43 @@
+// NOTE: Navigation header styling
+
+.site-header {
+  margin: 0 auto;
+  padding: 1.5em 0 1.5em 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .main-navigation {
+    text-transform: uppercase;
+
+    li {
+      display: inline-block;
+      margin-left: 1.5em;
+      padding: 0.5em;
+
+
+    }
+
+    a {
+      color: $color__link-menu;
+    }
+  }
+
+  .site-branding {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $color__logo-tagline;
+
+    display: flex;
+    align-items: center;
+
+    .site-title {
+      margin-left: 1em;
+    }
+  }
+}
+
+.highlight {
+  @include highlight-btn();
+}

@@ -1,0 +1,45 @@
+@mixin divider-skew-left() {
+  -webkit-box-shadow: 0px 11px 30px -10px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 11px 30px -10px rgba(0,0,0,1);
+  box-shadow: 0px 11px 30px -10px rgba(0,0,0,1);
+
+  -ms-transform: skewY(5deg);
+  -webkit-transform: skewY(5deg);
+  transform: skewY(5deg);
+}
+
+@mixin divider-skew-right() {
+  -webkit-box-shadow: 0px 11px 30px -10px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 11px 30px -10px rgba(0,0,0,1);
+  box-shadow: 0px 11px 30px -10px rgba(0,0,0,1);
+
+  -ms-transform: skewY(-5deg);
+  -webkit-transform: skewY(-5deg);
+  transform: skewY(-5deg);
+}
+
+@mixin border-btn() {
+  color: $color__border-button;
+  border-radius: 10px;
+  background: none;
+  padding: .7em 1.5em;
+  transition: all .5s;
+  text-transform: uppercase;
+  &:hover {
+    border: none;
+    background: rgba(255,255,255,.3);
+    transition: all .5s;
+  }
+}
+
+@mixin highlight-btn() {
+  background-color: $color__highlight-button;
+  transition: all .5s;
+  border-radius: 10px;
+  padding: .7em 1.5em;
+
+  &:hover {
+    background: $color__highlight-button-hover;
+    transition: all .5s;
+  }
+}
