@@ -1,23 +1,33 @@
-@mixin divider-skew-left() {
-  -webkit-box-shadow: 0px 11px 30px -10px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 11px 30px -10px rgba(0,0,0,1);
-  box-shadow: 0px 11px 30px -10px rgba(0,0,0,1);
 
-  -ms-transform: skewY(5deg);
-  -webkit-transform: skewY(5deg);
-  transform: skewY(5deg);
+@mixin divider-skew-left() {
+
+  -moz-box-shadow:0px 10px 20px 0 black;
+  -webkit-box-shadow:0px 10px 20px 0 black;
+  box-shadow:0px 10px 20px 0 black;
+
+
+  -ms-transform: skewY(4deg);
+  -webkit-transform: skewY(4deg);
+  transform: skewY(4deg);
+
+  z-index: 99;
 }
 
 @mixin divider-skew-right() {
-  -webkit-box-shadow: 0px 11px 30px -10px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 11px 30px -10px rgba(0,0,0,1);
-  box-shadow: 0px 11px 30px -10px rgba(0,0,0,1);
+  -moz-box-shadow:0px 10px 20px 0 black;
+  -webkit-box-shadow:0px 10px 20px 0 black;
+  box-shadow:0px 10px 20px 0 black;
 
-  -ms-transform: skewY(-5deg);
-  -webkit-transform: skewY(-5deg);
-  transform: skewY(-5deg);
+
+  -ms-transform: skewY(-4deg);
+  -webkit-transform: skewY(-4deg);
+  transform: skewY(-4deg);
+
+  z-index: 99;
 }
 
+
+// Styling all radius buttons
 @mixin border-btn() {
   color: $color__border-button;
   border-radius: 10px;
@@ -25,13 +35,15 @@
   padding: .7em 1.5em;
   transition: all .5s;
   text-transform: uppercase;
+  border: 1px solid $color__border-button;
   &:hover {
-    border: none;
+    border-color: rgba(255,255,255,0);
     background: rgba(255,255,255,.3);
     transition: all .5s;
   }
 }
 
+// Styling highlight red buttons
 @mixin highlight-btn() {
   background-color: $color__highlight-button;
   transition: all .5s;
@@ -42,4 +54,54 @@
     background: $color__highlight-button-hover;
     transition: all .5s;
   }
+}
+
+// Width and center content for section and FOOTER
+@mixin commonWidth() {
+  margin: 0 auto;
+  padding: 0 5em 0 5em;
+}
+
+// 3-column layout
+@mixin three-column-layout() {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-items: center;
+}
+
+// 2-column layout
+@mixin two-column-layout(){
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  justify-items: space-between;
+}
+
+// Floating animation
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+// Rotate animation
+@-webkit-keyframes rotation {
+		0%{
+				-webkit-transform: rotate(0deg);
+		}
+		50% {
+				-webkit-transform: rotate(10deg);
+		}
+    100%{
+				-webkit-transform: rotate(0deg);
+		}
 }

@@ -10,8 +10,9 @@ html {
 
 body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
-  margin: 0;
-	padding: 0 2em 0 2em;
+  margin: 0 auto;
+	// padding: 0 5em 0 5em;
+	color: $color__text-body;
 }
 
 @import "lists";
